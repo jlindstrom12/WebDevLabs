@@ -1,0 +1,150 @@
+:root {
+    --tan: #6F6866;
+    --brown: #38302E;
+    --blue-grey: #788585;
+    --ash: #9CAEA9;
+    --light-green:#CCDAD1;
+}
+
+@font-face{
+    font-family: MyFont;
+    src: url(./Fonts/Roboto/Roboto-Light.ttf);
+}
+
+* {
+    font-family:MyFont;
+    color:black;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--light-green)
+    /* border: 1px solid black; */
+}
+
+
+#webName {
+    background-color: var(--ash);
+    color: var(--brown);
+    
+}
+
+
+.classA {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+}
+
+.more{
+    display:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+nav a{
+    font-size:20px;
+    padding-left:2px;
+    color: var(--brown);
+    /* extra for personal website */
+    background-color: var(--ash);
+}
+
+/* .main {
+    display: flex;
+    flex-wrap:wrap
+} */
+
+.fun{
+    display: flex;
+    flex-flow:wrap;
+}
+
+form * {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#item1{
+    background-color: #6F6866;
+    width:30%;
+    text-align:center;
+    border-radius:10px;
+    color: var(--light-green)
+}
+
+#item2{
+    list-style-type: none;
+    /* text-align:Center; */
+}
+
+#item3{
+    width:auto;
+    padding:12px;
+    background-color:var(--brown);
+    display:flex;
+    justify-content:center;
+}
+
+.submit{
+    background-color:blue;
+    color:white;
+    border-radius:20px;
+}
+
+
+
+
+
+/* extra style I did to customize: */
+header{
+    background-color: var(--ash);
+    border-radius:30px;
+}
+nav{
+    background-color: var(--ash);
+}
+
+
+@keyframes fly-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#map{
+    width:500px;
+    height:500px;
+}
+
+/* Apply animation to list items */
+#item2 li {
+    animation: fly-in 0.5s ease forwards;
+    opacity: 0;
+}
+
+/* Delay each list item */
+#item2 li:nth-child(1) {
+    animation-delay: 0s;
+}
+#item2 li:nth-child(2) {
+    animation-delay: 0.5s;
+}
+#item2 li:nth-child(3) {
+    animation-delay: 1s;
+}
+#item2 li:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+
+
+
